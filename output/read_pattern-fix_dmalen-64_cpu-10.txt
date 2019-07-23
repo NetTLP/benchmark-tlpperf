@@ -1,0 +1,50 @@
+============ tlpperf ============
+-r remote:              192.168.10.1
+-l local:               0.0.0.0
+-b requester:           1b:00
+
+-d direction:           read
+-a DMA region:          0x0x747c00000
+-s DMA region size:     8392704
+-L DMA length           64
+
+-N nthreads:            10
+-R how to split:        diff
+-P pattern:             fix
+
+-c count:               0
+-i interval:            0
+-t duration             10
+=================================
+count_thread: start count thread
+benchmark_thread: start on cpu 0, address 0x747c00000, size 839270, len 64
+benchmark_thread: start on cpu 1, address 0x747ccc000, size 839270, len 64
+benchmark_thread: start on cpu 2, address 0x747d99000, size 839270, len 64
+benchmark_thread: start on cpu 3, address 0x747e66000, size 839270, len 64
+benchmark_thread: start on cpu 4, address 0x747f33000, size 839270, len 64
+benchmark_thread: start on cpu 5, address 0x748000000, size 839270, len 64
+benchmark_thread: start on cpu 6, address 0x7480cd000, size 839270, len 64
+benchmark_thread: start on cpu 7, address 0x74819a000, size 839270, len 64
+benchmark_thread: start on cpu 8, address 0x748267000, size 839270, len 64
+benchmark_thread: start on cpu 9, address 0x748334000, size 839270, len 64
+   1: 399890944 bps
+   1: 781037 tps
+   2: 400051712 bps
+   2: 781351 tps
+   3: 401260032 bps
+   3: 783710 tps
+   4: 400223744 bps
+   4: 781687 tps
+   5: 400210432 bps
+   5: 781661 tps
+   6: 400288768 bps
+   6: 781814 tps
+   7: 401121792 bps
+   7: 783441 tps
+   8: 401370624 bps
+   8: 783927 tps
+   9: 401182208 bps
+   9: 783559 tps
+  10: 401216512 bps
+  10: 783626 tps
+stop_all: stopping...
