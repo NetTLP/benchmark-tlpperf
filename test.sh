@@ -15,7 +15,8 @@ DURATION=10
 
 directions=(read write)
 #dma_lens=(1 4 8 16 32 64 128 256)
-dma_lens=(512)
+#dma_lens=(512)
+dma_lens=(1024)
 cpu_nums=(1 2 4 6 8 10 12 14 16)
 patterns=(fix seq random)
 
