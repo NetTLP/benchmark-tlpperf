@@ -42,7 +42,7 @@ def main():
                         default = list(round_map.keys())[0])
     args = parser.parse_args()
 
-    dma_lens = reversed([ 1, 4, 8, 16, 32, 64, 128, 256 ])
+    dma_lens = reversed([ 1, 4, 8, 16, 32, 64, 128, 256, 512 ])
     cpu_nums = [ 1, 2, 4, 6, 8, 10, 12, 14, 16]
 
     pdffile = ("graph/graph_{}_x-cpu_".format(args.direction) +
