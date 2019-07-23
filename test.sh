@@ -7,15 +7,15 @@ NETTLP_NIC_ADDR=192.168.10.1
 # parameters must be changed in accordance with TLP NIC host
 # DMA_REGION_ADDR and size is decided by tlpperf -S
 NETTLP_NIC_BUS=1b:00
-DMA_REGION_ADDR=0x747c00000
+DMA_REGION_ADDR=0x747400000
 DMA_REGION_SIZE=8392704
 
 # parameters for testing
 DURATION=10
 
-#directions=(read write)
-directions=(write)
-dma_lens=(1 4 8 16 32 64 128 256)
+directions=(read write)
+#dma_lens=(1 4 8 16 32 64 128 256)
+dma_lens=(512)
 cpu_nums=(1 2 4 6 8 10 12 14 16)
 patterns=(fix seq random)
 
