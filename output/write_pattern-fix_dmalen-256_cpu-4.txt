@@ -1,0 +1,44 @@
+============ tlpperf ============
+-r remote:              192.168.10.1
+-l local:               0.0.0.0
+-b requester:           1b:00
+
+-d direction:           write
+-a DMA region:          0x0x747c00000
+-s DMA region size:     8392704
+-L DMA length           256
+
+-N nthreads:            4
+-R how to split:        diff
+-P pattern:             fix
+
+-c count:               0
+-i interval:            0
+-t duration             10
+=================================
+count_thread: start count thread
+benchmark_thread: start on cpu 0, address 0x747c00000, size 2098176, len 256
+benchmark_thread: start on cpu 1, address 0x747e00000, size 2098176, len 256
+benchmark_thread: start on cpu 2, address 0x748000000, size 2098176, len 256
+benchmark_thread: start on cpu 3, address 0x748200000, size 2098176, len 256
+   1: 5245220864 bps
+   1: 2561143 tps
+   2: 5419677696 bps
+   2: 2646327 tps
+   3: 5434648576 bps
+   3: 2653638 tps
+   4: 5437083648 bps
+   4: 2654827 tps
+   5: 5435590656 bps
+   5: 2654097 tps
+   6: 5434869760 bps
+   6: 2653745 tps
+   7: 5428094976 bps
+   7: 2650437 tps
+   8: 5416038400 bps
+   8: 2644550 tps
+   9: 5410283520 bps
+   9: 2641740 tps
+  10: 5408088064 bps
+  10: 2640668 tps
+stop_all: stopping...
