@@ -1,0 +1,56 @@
+============ tlpperf ============
+-r remote:              192.168.10.1
+-l local:               0.0.0.0
+-b requester:           1b:00
+
+-d direction:           read
+-a DMA region:          0x747400000
+-s DMA region size:     8392704
+-L DMA length           1216
+
+-N nthreads:            16
+-R how to split:        diff
+-P pattern:             fix
+
+-c count:               0
+-i interval:            0
+-t duration             10
+=================================
+count_thread: start count thread
+benchmark_thread: start on cpu 0, address 0x747400000, size 524544, len 1216
+benchmark_thread: start on cpu 1, address 0x747480000, size 524544, len 1216
+benchmark_thread: start on cpu 2, address 0x747500000, size 524544, len 1216
+benchmark_thread: start on cpu 3, address 0x747580000, size 524544, len 1216
+benchmark_thread: start on cpu 4, address 0x747600000, size 524544, len 1216
+benchmark_thread: start on cpu 5, address 0x747680000, size 524544, len 1216
+benchmark_thread: start on cpu 6, address 0x747700000, size 524544, len 1216
+benchmark_thread: start on cpu 7, address 0x747780000, size 524544, len 1216
+benchmark_thread: start on cpu 8, address 0x747800000, size 524544, len 1216
+benchmark_thread: start on cpu 9, address 0x747880000, size 524544, len 1216
+benchmark_thread: start on cpu 10, address 0x747900000, size 524544, len 1216
+benchmark_thread: start on cpu 11, address 0x747980000, size 524544, len 1216
+benchmark_thread: start on cpu 12, address 0x747a00000, size 524544, len 1216
+benchmark_thread: start on cpu 13, address 0x747a80000, size 524544, len 1216
+benchmark_thread: start on cpu 14, address 0x747b00000, size 524544, len 1216
+benchmark_thread: start on cpu 15, address 0x747b80000, size 524544, len 1216
+   1: 2949908992 bps
+   1: 909712 tps
+   2: 2952480256 bps
+   2: 910511 tps
+   3: 2954552832 bps
+   3: 911147 tps
+   4: 2956410368 bps
+   4: 911722 tps
+   5: 2952768000 bps
+   5: 910600 tps
+   6: 2953536000 bps
+   6: 910835 tps
+   7: 2954433536 bps
+   7: 911111 tps
+   8: 2954428928 bps
+   8: 911113 tps
+   9: 2953871872 bps
+   9: 910937 tps
+  10: 2954208768 bps
+  10: 911043 tps
+stop_all: stopping...
