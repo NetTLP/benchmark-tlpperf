@@ -10,6 +10,10 @@ for pattern in seq random fix; do
 	./plot-x-dmalen.py -d read -p $pattern -u tps -r M
 	./plot-x-dmalen.py -d write -p $pattern -u bps
 	./plot-x-dmalen.py -d write -p $pattern -u tps -r M
+
+	./plot-lat.py -p seq
+	./plot-lat.py -p fix
+	./plot-lat.py -p random
 done
 
 for pattern in seq seq512; do

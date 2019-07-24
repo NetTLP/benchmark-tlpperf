@@ -27,6 +27,11 @@ color_list = [ "#3c76af",
                "#5abbcc",
 ]
 
+line_index = 0
+line_list = [
+    "-", "--", "-.", ":"
+]
+
 def get_marker():
     global marker_index
     global maker_list
@@ -40,6 +45,13 @@ def get_color():
     c = color_list[color_index]
     color_index = (color_index + 1) % len(color_list)
     return c
+
+def get_linestyle():
+    global line_index
+    global line_list
+    l = line_list[line_index]
+    line_index = (line_index + 1) % len(line_list)
+    return l
 
 def change_aspect_ratio(p, ratio):
     aspect = ((1/ratio) *

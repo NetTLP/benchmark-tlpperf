@@ -21,3 +21,7 @@
 
 ./plot-x-dmalen-16b-interval.py -p fix -R 2 \
 	-o graph/graph-paper_x-dmalen-16binterval_pattern_fix.pdf
+
+
+./plot-lat.py -l 1 -l 256 -l 1024 -p fix -R 3 \
+	-o graph/graph-paper_latency_read_fix.pdf
