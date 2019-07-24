@@ -34,21 +34,28 @@ def main():
     parser.add_argument("-u", "--unit", help = "unit of bandwidth",
                         choices = ["bps", "tps"], default = "bps")
     parser.add_argument("-p", "--pattern", help = "access pattern",
-                        choices = ["seq", "fix", "random"], default = "seq")
+                        choices = ["seq", "seq512", "fix", "random"],
+                        default = "seq")
     parser.add_argument("-r", "--round", help = "round up x axis",
                         choices = round_map.keys(),
                         default = list(round_map.keys())[0])
+    parser.add_argument("-R", "--ratio", help = "aspect ratio",
+                        type = float, default = ratio)
+    parser.add_argument("-o", "--output", help = "output pdf file name",
+                        default = None)
     args = parser.parse_args()
 
     dma_lens = list(map(lambda x: x * 16, range(129)))
     dma_lens[0] = 1
     xaxis = list(map(lambda x: x * 256, range(9)))
+    xaxis[0] = 1
 
-    pdffile = ("graph/graphx_dmalen-16binterval" +
-               "pattern-{}_{}.pdf".format(args.pattern, args.unit))
+    if not args.output:
+        pdffile = ("graph/graph_x-dmalen-16binterval_" +
+                   "pattern-{}_{}.pdf".format(args.pattern, args.unit))
+    else:
+        pdffile = args.output
                
-
-
     fig, ax= plt.subplots()
 
     bpses = []
@@ -81,8 +88,9 @@ def main():
 
     ax.grid(True, linestyle = "--", linewidth = 0.5)
 
-    change_aspect_ratio(ax, ratio)
+    change_aspect_ratio(ax, args.ratio)
     
+    print("save '{}'".format(pdffile))
     plt.savefig(pdffile, bbox_inches = "tight", pad_inches = 0.05)
 
 
