@@ -10,7 +10,7 @@
 
 -N nthreads:            16
 -R how to split:        diff
--P pattern:             seq
+-P pattern:             seq512
 -M latency mode:        off
 
 -c count:               0
@@ -35,24 +35,24 @@ benchmark_thread: start on cpu 12, address 0x747a00000, size 524544, len 1072
 benchmark_thread: start on cpu 13, address 0x747a80000, size 524544, len 1072
 benchmark_thread: start on cpu 14, address 0x747b00000, size 524544, len 1072
 benchmark_thread: start on cpu 15, address 0x747b80000, size 524544, len 1072
-   1: 823296 bps
-   1: 304 tps
-   2: 960512 bps
-   2: 368 tps
-   3: 1646592 bps
-   3: 608 tps
-   4: 960512 bps
-   4: 368 tps
-   5: 960512 bps
-   5: 368 tps
-   6: 960512 bps
-   6: 368 tps
-   7: 1646592 bps
-   7: 608 tps
-   8: 960512 bps
-   8: 368 tps
-   9: 960512 bps
-   9: 368 tps
-  10: 1646592 bps
-  10: 608 tps
+   1: 2606363392 bps
+   1: 911734 tps
+   2: 2601555328 bps
+   2: 910059 tps
+   3: 2605011840 bps
+   3: 911269 tps
+   4: 2606069248 bps
+   4: 911635 tps
+   5: 2606663296 bps
+   5: 911848 tps
+   6: 2607073024 bps
+   6: 911987 tps
+   7: 2607232640 bps
+   7: 912045 tps
+   8: 2606247168 bps
+   8: 911702 tps
+   9: 2607182336 bps
+   9: 912030 tps
+  10: 2607072640 bps
+  10: 911986 tps
 stop_all: stopping...
