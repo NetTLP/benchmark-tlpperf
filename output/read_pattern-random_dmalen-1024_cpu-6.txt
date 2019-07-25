@@ -4,43 +4,45 @@
 -b requester:           1b:00
 
 -d direction:           read
--a DMA region:          0x747400000
+-a DMA region:          0x74b000000
 -s DMA region size:     8392704
 -L DMA length           1024
 
 -N nthreads:            6
 -R how to split:        diff
 -P pattern:             random
+-M latency mode:        off
 
 -c count:               0
 -i interval:            0
 -t duration             10
+-D debug:               off
 =================================
 count_thread: start count thread
-benchmark_thread: start on cpu 0, address 0x747400000, size 1398784, len 1024
-benchmark_thread: start on cpu 1, address 0x747555000, size 1398784, len 1024
-benchmark_thread: start on cpu 2, address 0x7476ab000, size 1398784, len 1024
-benchmark_thread: start on cpu 3, address 0x747800000, size 1398784, len 1024
-benchmark_thread: start on cpu 4, address 0x747956000, size 1398784, len 1024
-benchmark_thread: start on cpu 5, address 0x747aab000, size 1398784, len 1024
-   1: 1478631424 bps
-   1: 360994 tps
-   2: 1474301952 bps
-   2: 359937 tps
-   3: 1474629632 bps
-   3: 360017 tps
-   4: 1473540096 bps
-   4: 359751 tps
-   5: 1473351680 bps
-   5: 359705 tps
-   6: 1464733696 bps
-   6: 357601 tps
-   7: 1474101248 bps
-   7: 359887 tps
-   8: 1468407808 bps
-   8: 358498 tps
-   9: 1468841984 bps
-   9: 358604 tps
-  10: 1473396736 bps
-  10: 359716 tps
+benchmark_thread: start on cpu 0, address 0x74b000000, size 1398784, len 1024
+benchmark_thread: start on cpu 1, address 0x74b155000, size 1398784, len 1024
+benchmark_thread: start on cpu 2, address 0x74b2ab000, size 1398784, len 1024
+benchmark_thread: start on cpu 3, address 0x74b400000, size 1398784, len 1024
+benchmark_thread: start on cpu 4, address 0x74b556000, size 1398784, len 1024
+benchmark_thread: start on cpu 5, address 0x74b6ab000, size 1398784, len 1024
+   1: 381313024 bps
+   1: 46547 tps
+   2: 380944384 bps
+   2: 46502 tps
+   3: 380944384 bps
+   3: 46502 tps
+   4: 380944384 bps
+   4: 46502 tps
+   5: 380936192 bps
+   5: 46501 tps
+   6: 380936192 bps
+   6: 46501 tps
+   7: 380944384 bps
+   7: 46502 tps
+   8: 380944384 bps
+   8: 46502 tps
+   9: 380944384 bps
+   9: 46502 tps
+  10: 380928000 bps
+  10: 46500 tps
 stop_all: stopping...
