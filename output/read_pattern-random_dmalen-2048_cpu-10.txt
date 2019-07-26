@@ -4,7 +4,7 @@
 -b requester:           1b:00
 
 -d direction:           read
--a DMA region:          0x74b000000
+-a DMA region:          0x749000000
 -s DMA region size:     8392704
 -L DMA length           2048
 
@@ -19,34 +19,34 @@
 -D debug:               off
 =================================
 count_thread: start count thread
-benchmark_thread: start on cpu 0, address 0x74b000000, size 839270, len 2048
-benchmark_thread: start on cpu 1, address 0x74b0cc000, size 839270, len 2048
-benchmark_thread: start on cpu 2, address 0x74b199000, size 839270, len 2048
-benchmark_thread: start on cpu 3, address 0x74b266000, size 839270, len 2048
-benchmark_thread: start on cpu 4, address 0x74b333000, size 839270, len 2048
-benchmark_thread: start on cpu 5, address 0x74b400000, size 839270, len 2048
-benchmark_thread: start on cpu 6, address 0x74b4cd000, size 839270, len 2048
-benchmark_thread: start on cpu 7, address 0x74b59a000, size 839270, len 2048
-benchmark_thread: start on cpu 8, address 0x74b667000, size 839270, len 2048
-benchmark_thread: start on cpu 9, address 0x74b734000, size 839270, len 2048
-   1: 1270185984 bps
-   1: 77526 tps
-   2: 1269792768 bps
-   2: 77502 tps
-   3: 1269792768 bps
-   3: 77502 tps
-   4: 1269792768 bps
-   4: 77502 tps
+benchmark_thread: start on cpu 0, address 0x749000000, size 839270, len 2048
+benchmark_thread: start on cpu 1, address 0x7490cc000, size 839270, len 2048
+benchmark_thread: start on cpu 2, address 0x749199000, size 839270, len 2048
+benchmark_thread: start on cpu 3, address 0x749266000, size 839270, len 2048
+benchmark_thread: start on cpu 4, address 0x749333000, size 839270, len 2048
+benchmark_thread: start on cpu 5, address 0x749400000, size 839270, len 2048
+benchmark_thread: start on cpu 6, address 0x7494cd000, size 839270, len 2048
+benchmark_thread: start on cpu 7, address 0x74959a000, size 839270, len 2048
+benchmark_thread: start on cpu 8, address 0x749667000, size 839270, len 2048
+benchmark_thread: start on cpu 9, address 0x749734000, size 839270, len 2048
+   1: 1270169600 bps
+   1: 77525 tps
+   2: 1269809152 bps
+   2: 77503 tps
+   3: 1269809152 bps
+   3: 77503 tps
+   4: 1269809152 bps
+   4: 77503 tps
    5: 1269825536 bps
    5: 77504 tps
-   6: 1269809152 bps
-   6: 77503 tps
-   7: 1269809152 bps
-   7: 77503 tps
-   8: 1269825536 bps
-   8: 77504 tps
-   9: 1269858304 bps
-   9: 77506 tps
-  10: 1269760000 bps
-  10: 77500 tps
+   6: 1269727232 bps
+   6: 77498 tps
+   7: 1269858304 bps
+   7: 77506 tps
+   8: 1269760000 bps
+   8: 77500 tps
+   9: 1269792768 bps
+   9: 77502 tps
+  10: 1269809152 bps
+  10: 77503 tps
 stop_all: stopping...

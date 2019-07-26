@@ -4,7 +4,7 @@
 -b requester:           1b:00
 
 -d direction:           read
--a DMA region:          0x74b000000
+-a DMA region:          0x749000000
 -s DMA region size:     8392704
 -L DMA length           1024
 
@@ -19,28 +19,28 @@
 -D debug:               off
 =================================
 count_thread: start count thread
-benchmark_thread: start on cpu 0, address 0x74b000000, size 2098176, len 1024
-benchmark_thread: start on cpu 1, address 0x74b200000, size 2098176, len 1024
-benchmark_thread: start on cpu 2, address 0x74b400000, size 2098176, len 1024
-benchmark_thread: start on cpu 3, address 0x74b600000, size 2098176, len 1024
+benchmark_thread: start on cpu 0, address 0x749000000, size 2098176, len 1024
+benchmark_thread: start on cpu 1, address 0x749200000, size 2098176, len 1024
+benchmark_thread: start on cpu 2, address 0x749400000, size 2098176, len 1024
+benchmark_thread: start on cpu 3, address 0x749600000, size 2098176, len 1024
    1: 254386176 bps
    1: 31053 tps
    2: 253960192 bps
    2: 31001 tps
-   3: 253960192 bps
-   3: 31001 tps
-   4: 253968384 bps
-   4: 31002 tps
-   5: 253960192 bps
-   5: 31001 tps
-   6: 253968384 bps
-   6: 31002 tps
-   7: 253968384 bps
-   7: 31002 tps
+   3: 253952000 bps
+   3: 31000 tps
+   4: 253960192 bps
+   4: 31001 tps
+   5: 253968384 bps
+   5: 31002 tps
+   6: 253960192 bps
+   6: 31001 tps
+   7: 253960192 bps
+   7: 31001 tps
    8: 253960192 bps
    8: 31001 tps
-   9: 253968384 bps
-   9: 31002 tps
+   9: 253960192 bps
+   9: 31001 tps
   10: 253960192 bps
   10: 31001 tps
 stop_all: stopping...

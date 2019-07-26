@@ -4,7 +4,7 @@
 -b requester:           1b:00
 
 -d direction:           read
--a DMA region:          0x74b000000
+-a DMA region:          0x749000000
 -s DMA region size:     8392704
 -L DMA length           1024
 
@@ -19,36 +19,36 @@
 -D debug:               off
 =================================
 count_thread: start count thread
-benchmark_thread: start on cpu 0, address 0x74b000000, size 699392, len 1024
-benchmark_thread: start on cpu 1, address 0x74b0aa000, size 699392, len 1024
-benchmark_thread: start on cpu 2, address 0x74b155000, size 699392, len 1024
-benchmark_thread: start on cpu 3, address 0x74b200000, size 699392, len 1024
-benchmark_thread: start on cpu 4, address 0x74b2ab000, size 699392, len 1024
-benchmark_thread: start on cpu 5, address 0x74b355000, size 699392, len 1024
-benchmark_thread: start on cpu 6, address 0x74b400000, size 699392, len 1024
-benchmark_thread: start on cpu 7, address 0x74b4ab000, size 699392, len 1024
-benchmark_thread: start on cpu 8, address 0x74b556000, size 699392, len 1024
-benchmark_thread: start on cpu 9, address 0x74b600000, size 699392, len 1024
-benchmark_thread: start on cpu 10, address 0x74b6ab000, size 699392, len 1024
-benchmark_thread: start on cpu 11, address 0x74b756000, size 699392, len 1024
-   1: 761970688 bps
-   1: 93014 tps
+benchmark_thread: start on cpu 0, address 0x749000000, size 699392, len 1024
+benchmark_thread: start on cpu 1, address 0x7490aa000, size 699392, len 1024
+benchmark_thread: start on cpu 2, address 0x749155000, size 699392, len 1024
+benchmark_thread: start on cpu 3, address 0x749200000, size 699392, len 1024
+benchmark_thread: start on cpu 4, address 0x7492ab000, size 699392, len 1024
+benchmark_thread: start on cpu 5, address 0x749355000, size 699392, len 1024
+benchmark_thread: start on cpu 6, address 0x749400000, size 699392, len 1024
+benchmark_thread: start on cpu 7, address 0x7494ab000, size 699392, len 1024
+benchmark_thread: start on cpu 8, address 0x749556000, size 699392, len 1024
+benchmark_thread: start on cpu 9, address 0x749600000, size 699392, len 1024
+benchmark_thread: start on cpu 10, address 0x7496ab000, size 699392, len 1024
+benchmark_thread: start on cpu 11, address 0x749756000, size 699392, len 1024
+   1: 761987072 bps
+   1: 93016 tps
    2: 761888768 bps
    2: 93004 tps
-   3: 761888768 bps
-   3: 93004 tps
-   4: 761896960 bps
-   4: 93005 tps
-   5: 761905152 bps
-   5: 93006 tps
-   6: 761880576 bps
-   6: 93003 tps
-   7: 761905152 bps
-   7: 93006 tps
-   8: 761888768 bps
-   8: 93004 tps
-   9: 761888768 bps
-   9: 93004 tps
+   3: 761880576 bps
+   3: 93002 tps
+   4: 761872384 bps
+   4: 93002 tps
+   5: 761888768 bps
+   5: 93004 tps
+   6: 761856000 bps
+   6: 93000 tps
+   7: 761888768 bps
+   7: 93004 tps
+   8: 761880576 bps
+   8: 93003 tps
+   9: 761864192 bps
+   9: 93001 tps
   10: 761880576 bps
   10: 93003 tps
 stop_all: stopping...
