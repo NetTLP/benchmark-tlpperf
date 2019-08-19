@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ./plot-x-cpu.py -d read -l 256 -l 512 -l 1024 -r G -R 2 \
-	-o graph/graph-paper_x-cpuw_read.pdf
+	-o graph/graph-paper_x-cpu_read.pdf
 
 ./plot-x-cpu.py -d write -l 128 -l 256 -l 512 -r G -R 2 \
 	-o graph/graph-paper_x-cpu_write.pdf
