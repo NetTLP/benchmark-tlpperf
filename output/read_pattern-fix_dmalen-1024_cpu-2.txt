@@ -4,41 +4,39 @@
 -b requester:           1b:00
 
 -d direction:           read
--a DMA region:          0x749000000
+-a DMA region:          0x747400000
 -s DMA region size:     8392704
 -L DMA length           1024
 
 -N nthreads:            2
 -R how to split:        diff
 -P pattern:             fix
--M latency mode:        off
 
 -c count:               0
 -i interval:            0
 -t duration             10
--D debug:               off
 =================================
 count_thread: start count thread
-benchmark_thread: start on cpu 0, address 0x749000000, size 4196352, len 1024
-benchmark_thread: start on cpu 1, address 0x749400000, size 4196352, len 1024
-   1: 127197184 bps
-   1: 15527 tps
-   2: 126976000 bps
-   2: 15500 tps
-   3: 126984192 bps
-   3: 15501 tps
-   4: 126976000 bps
-   4: 15500 tps
-   5: 126984192 bps
-   5: 15501 tps
-   6: 126959616 bps
-   6: 15498 tps
-   7: 126984192 bps
-   7: 15500 tps
-   8: 126984192 bps
-   8: 15501 tps
-   9: 126976000 bps
-   9: 15500 tps
-  10: 126976000 bps
-  10: 15500 tps
+benchmark_thread: start on cpu 0, address 0x747400000, size 4196352, len 1024
+benchmark_thread: start on cpu 1, address 0x747800000, size 4196352, len 1024
+   1: 615206912 bps
+   1: 150197 tps
+   2: 623620096 bps
+   2: 152251 tps
+   3: 628350976 bps
+   3: 153406 tps
+   4: 630853632 bps
+   4: 154017 tps
+   5: 630960128 bps
+   5: 154043 tps
+   6: 626896896 bps
+   6: 153051 tps
+   7: 624197632 bps
+   7: 152392 tps
+   8: 624193536 bps
+   8: 152391 tps
+   9: 623722496 bps
+   9: 152276 tps
+  10: 627777536 bps
+  10: 153266 tps
 stop_all: stopping...

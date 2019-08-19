@@ -4,53 +4,51 @@
 -b requester:           1b:00
 
 -d direction:           read
--a DMA region:          0x749000000
+-a DMA region:          0x747400000
 -s DMA region size:     8392704
 -L DMA length           1024
 
 -N nthreads:            14
 -R how to split:        diff
 -P pattern:             seq
--M latency mode:        off
 
 -c count:               0
 -i interval:            0
 -t duration             10
--D debug:               off
 =================================
 count_thread: start count thread
-benchmark_thread: start on cpu 0, address 0x749000000, size 599478, len 1024
-benchmark_thread: start on cpu 1, address 0x749092000, size 599478, len 1024
-benchmark_thread: start on cpu 2, address 0x749124000, size 599478, len 1024
-benchmark_thread: start on cpu 3, address 0x7491b7000, size 599478, len 1024
-benchmark_thread: start on cpu 4, address 0x749249000, size 599478, len 1024
-benchmark_thread: start on cpu 5, address 0x7492db000, size 599478, len 1024
-benchmark_thread: start on cpu 6, address 0x74936e000, size 599478, len 1024
-benchmark_thread: start on cpu 7, address 0x749400000, size 599478, len 1024
-benchmark_thread: start on cpu 8, address 0x749492000, size 599478, len 1024
-benchmark_thread: start on cpu 9, address 0x749525000, size 599478, len 1024
-benchmark_thread: start on cpu 10, address 0x7495b7000, size 599478, len 1024
-benchmark_thread: start on cpu 11, address 0x749649000, size 599478, len 1024
-benchmark_thread: start on cpu 12, address 0x7496dc000, size 599478, len 1024
-benchmark_thread: start on cpu 13, address 0x74976e000, size 599478, len 1024
-   1: 888840192 bps
-   1: 108501 tps
-   2: 888864768 bps
-   2: 108504 tps
-   3: 888864768 bps
-   3: 108504 tps
-   4: 888864768 bps
-   4: 108504 tps
-   5: 888856576 bps
-   5: 108503 tps
-   6: 888823808 bps
-   6: 108499 tps
-   7: 888856576 bps
-   7: 108503 tps
-   8: 888872960 bps
-   8: 108505 tps
-   9: 888872960 bps
-   9: 108505 tps
-  10: 888864768 bps
-  10: 108504 tps
+benchmark_thread: start on cpu 0, address 0x747400000, size 599478, len 1024
+benchmark_thread: start on cpu 1, address 0x747492000, size 599478, len 1024
+benchmark_thread: start on cpu 2, address 0x747524000, size 599478, len 1024
+benchmark_thread: start on cpu 3, address 0x7475b7000, size 599478, len 1024
+benchmark_thread: start on cpu 4, address 0x747649000, size 599478, len 1024
+benchmark_thread: start on cpu 5, address 0x7476db000, size 599478, len 1024
+benchmark_thread: start on cpu 6, address 0x74776e000, size 599478, len 1024
+benchmark_thread: start on cpu 7, address 0x747800000, size 599478, len 1024
+benchmark_thread: start on cpu 8, address 0x747892000, size 599478, len 1024
+benchmark_thread: start on cpu 9, address 0x747925000, size 599478, len 1024
+benchmark_thread: start on cpu 10, address 0x7479b7000, size 599478, len 1024
+benchmark_thread: start on cpu 11, address 0x747a49000, size 599478, len 1024
+benchmark_thread: start on cpu 12, address 0x747adc000, size 599478, len 1024
+benchmark_thread: start on cpu 13, address 0x747b6e000, size 599478, len 1024
+   1: 3207974912 bps
+   1: 783197 tps
+   2: 3210125312 bps
+   2: 783723 tps
+   3: 3206602752 bps
+   3: 782861 tps
+   4: 3205500928 bps
+   4: 782593 tps
+   5: 3197063168 bps
+   5: 780533 tps
+   6: 3202519040 bps
+   6: 781865 tps
+   7: 3202727936 bps
+   7: 781915 tps
+   8: 3204395008 bps
+   8: 782323 tps
+   9: 3203629056 bps
+   9: 782136 tps
+  10: 3203792896 bps
+  10: 782176 tps
 stop_all: stopping...
