@@ -24,6 +24,8 @@ def parse_lat(filename):
 
     lats = []
 
+    print("parse {}".format(filename))
+
     with open(filename, "r") as f:
         for line in f:
             l = line.strip()
@@ -65,4 +67,15 @@ def cdf(lats, bin = 1):
         if num_of_values == len(values):
             break
 
+    find_x(xaxis, yaxis, 0.8)
+    find_x(xaxis, yaxis, 0.9)
+    find_x(xaxis, yaxis, 0.99)
+    find_x(xaxis, yaxis, 1.0)
+
     return xaxis, yaxis
+
+def find_x(xaxis, yaxis, percent):
+    for x in range(len(xaxis)):
+        if yaxis[x] >= percent:
+            print("{}% x is {}".format(percent * 100, x))
+            break
