@@ -8,9 +8,11 @@ from myplotlib import get_marker, get_color, change_aspect_ratio
 from tlpperfparser import parse
 
 ratio = 1.5
-fontsize = 14
-lfontsize = 13.5
-markersize = 11
+
+fontsize = 22
+lfontsize = 16
+markersize = 14
+
 linewidth = 2.4
 lines = { "linewidth" : linewidth,
           "markersize" : markersize,
@@ -47,7 +49,7 @@ def main():
 
     dma_lens = list(map(lambda x: x * 16, range(129)))
     dma_lens[0] = 1
-    xaxis = list(map(lambda x: x * 256, range(9)))
+    xaxis = list(map(lambda x: x * 512, range(5)))
     xaxis[0] = 1
 
     if not args.output:
@@ -80,11 +82,12 @@ def main():
 
     ax.plot(dma_lens, yaxis, color = get_color())
 
+    plt.yticks([0, 1, 2, 3, 4])
     plt.xticks(xaxis)
     ax.tick_params(labelsize = fontsize)
     ax.set_ylabel("throughput ({}{})".format(args.round, args.unit),
                   fontsize = fontsize)
-    ax.set_xlabel("transfer size (byte)", fontsize = fontsize)
+    ax.set_xlabel("request size (byte)", fontsize = fontsize)
 
     ax.grid(True, linestyle = "--", linewidth = 0.5)
 

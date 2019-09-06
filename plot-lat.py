@@ -7,8 +7,8 @@ from myplotlib import get_marker, get_color, get_linestyle, change_aspect_ratio
 
 from tlpperfparser import parse, parse_lat
 
-fontsize = 14
-lfontsize = 13.5
+fontsize = 22
+lfontsize = 18
 markersize = 11
 linewidth = 2.4
 lines = { "linewidth" : linewidth,

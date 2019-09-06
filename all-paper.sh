@@ -1,13 +1,13 @@
 #!/bin/bash
 
-./plot-x-cpu.py -d read -l 256 -l 512 -l 1024 -r G -R 2.5 \
+./plot-x-cpu.py -d read -l 256 -l 512 -l 1024 -r G -R 1.1 \
 	-o graph/graph-paper_x-cpu_read.pdf
 
-./plot-x-cpu.py -d write -l 128 -l 256 -l 512 -r G -R 2.5 \
+./plot-x-cpu.py -d write -l 128 -l 256 -l 512 -r G -R 1.1 \
 	-o graph/graph-paper_x-cpu_write.pdf
 
 
-./plot-x-dmalen.py -d read -c 1 -c 16 -r G -R 2.5 \
+./plot-x-dmalen.py -d read -c 1 -c 16 -r G -R 1.1 \
 	-o graph/graph-paper_x-dmalen_read.pdf
 
 #./plot-x-dmalen.py -d write -c 1 -c 16 -r G -R 2 \
@@ -19,9 +19,9 @@
 #./plot-x-dmalen-16b-interval.py -p seq -R 2 \
 #	-o graph/graph-paper_x-dmalen-16binterval_pattern_seq.pdf
 
-./plot-x-dmalen-16b-interval.py -p fix -R 2.5 \
+./plot-x-dmalen-16b-interval.py -p fix -R 1.08 \
 	-o graph/graph-paper_x-dmalen-16binterval_pattern_fix.pdf
 
 
-./plot-lat.py -l 1 -l 256 -l 1024 -p fix -R 2.5\
+./plot-lat.py -l 1 -l 256 -l 1024 -p fix -R 1.45 \
 	-o graph/graph-paper_latency_read_fix.pdf

@@ -7,9 +7,9 @@ from myplotlib import get_marker, get_color, change_aspect_ratio
 
 from tlpperfparser import parse
 
-fontsize = 14
-lfontsize = 12
-markersize = 11
+fontsize = 22
+lfontsize = 18
+markersize = 14
 linewidth = 2.4
 lines = { "linewidth" : linewidth,
           "markersize" : markersize,
@@ -89,6 +89,11 @@ def main():
 
         ax.plot(cpu_nums, yaxis, marker = get_marker(), color = get_color(),
                 label = "DMA {}B".format(dma_len))
+
+        print(f)
+        for x in range(len(cpu_nums)):
+            print("{}\t{}".format(cpu_nums[x], yaxis[x]))
+        print()
 
         # save maximum y value
         if maximum < max(yaxis) :
